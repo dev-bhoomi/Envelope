@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');   
+
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+padding:0;
+font-size:18px;
+font-family:'Pacifico&display';
+line-height:20px;
+color:#b1b4bd;
+background-color:#323a45;
+
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+a{
+color:#b1b4bd;
+font-weight:500;
+}
+
+a:hover{
+color:red;
+
+}
+.header-background{
+position:static;
+display:block;
+overflow:visible;
+top:0;
+height:auto;
+min-height:750px;
+margin-bottom:50px;
+padding-bottom:70px;
+flex-direction:column;
+background-position:0px 0px,100% 50%;
+}
+.main{
+width:270px;
+height:170px;
+position:relative;
+background-color:#000;
+border-radius:0px 0px 20px 20px;
+transform-style:preserve-3d;
+perspective:700px;
+}
+
+.mail:before{
+content:'';
+position:absolute;
+border-left:200px solid transparent;
+border-right:200px solid #0066cc;
+border-top:150px solid transparent;
+border-bottom:150px solid #0066cc;
+border-radius:0px 0px 20px 20px;
+z-index:5;
+}
+
+.mail:after{
+content:'';
+position:absolute;
+border-left:200px solid #0073e6;
+border-right:200px solid transparent;
+border-top:150px solid transparent;
+border-bottom:150px solid #0073e6;
+border-radius:0px 0px 20px 20px;
+}
+
+
+.mail .cover
+{
+position:absolute;
+border-left:200px solid transparent;
+border-right:200px solid transparent;
+border-top:150px solid #3399ff;
+border-bottom:150px solid transparent;
+transform-origin:top;
+transition:1s 1s ease;
+z-index:4;
+}
+.mail:hover .cover
+{
+transform:rotatex(180deg);
+transition:1s  ease;
+}
+.mail .image{
+position:absolute;
+width:380px;
+left:10px;
+height:290px;
+top:10px;
+background-color:red;
+border-radius:0px 0px 20px 20px;
+background-image:url("5.jpg");
+background-size:cover;
+background-position:center center;
+transition:1s ease;
+}
+
+.mail:hover .image
+{
+top:-140px;
+transition:1s 1s ease;
+}
+
+
+
+
+
